@@ -7,6 +7,23 @@ return {
       return {}
     end,
   },
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    config = function()
+      require("neo-tree").setup({
+        filesystem = {
+          filtered_items = {
+            visible = false,
+            hide_dotfiles = false,
+            hide_hidden = false,
+            hide_by_name = {
+              "node_modules",
+            },
+          },
+        },
+      })
+    end,
+  },
   -- then: setup supertab in cmp
   {
     "hrsh7th/nvim-cmp",
