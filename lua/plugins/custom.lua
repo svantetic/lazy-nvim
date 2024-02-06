@@ -7,6 +7,19 @@ return {
       return {}
     end,
   },
+  -- add any tools you want to have installed below
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "stylua",
+        "shfmt",
+        "flake8",
+        "prettier",
+      },
+    },
+  },
+
   {
     "nvim-neo-tree/neo-tree.nvim",
     config = function()
