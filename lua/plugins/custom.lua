@@ -25,9 +25,13 @@ return {
     config = function()
       require("neo-tree").setup({
         filesystem = {
+          follow_current_file = {
+            enabled = true,
+          },
           filtered_items = {
             visible = false,
             hide_dotfiles = false,
+            hide_gitignored = false,
             hide_hidden = false,
             hide_by_name = {
               "node_modules",
