@@ -7,14 +7,31 @@ return {
       return {}
     end,
   },
+  -- add any tools you want to have installed below
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "stylua",
+        "shfmt",
+        "flake8",
+        "prettier",
+      },
+    },
+  },
+
   {
     "nvim-neo-tree/neo-tree.nvim",
     config = function()
       require("neo-tree").setup({
         filesystem = {
+          follow_current_file = {
+            enabled = true,
+          },
           filtered_items = {
             visible = false,
             hide_dotfiles = false,
+            hide_gitignored = false,
             hide_hidden = false,
             hide_by_name = {
               "node_modules",
