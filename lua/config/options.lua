@@ -4,6 +4,9 @@
 -- j
 --
 --
+--
+--
+vim.g.autoformat = false
 local opt = vim.opt
 
 opt.guicursor = ""
@@ -11,3 +14,5 @@ opt.guicursor = ""
 opt.scrolloff = 10
 
 opt.updatetime = 50
+
+-- opt.autoformat = false
