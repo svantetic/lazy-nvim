@@ -4,6 +4,7 @@ Changes that suit my needs:
 - show gitignored files
 - `gd` to go to definition
 - `<s-j>` is disabled
+- autoformat is disabled
 
 This is a work in progress config.
 
