@@ -5,6 +5,7 @@ Changes that suit my needs:
 - `gd` to go to definition
 - `<s-j>` is disabled
 - autoformat is disabled
+- catppuccin theme with macchiato falvor
 
 This is a work in progress config.
 
