@@ -21,6 +21,15 @@ return {
   },
 
   {
+    "catppuccin/nvim",
+    name = "catppucin",
+    priority = 1000,
+
+    require("catppuccin").setup({
+      flavour = "macchiato",
+    }),
+  },
+  {
     "nvim-neo-tree/neo-tree.nvim",
     config = function()
       require("neo-tree").setup({
